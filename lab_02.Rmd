@@ -44,6 +44,8 @@ need to set the class attribute to `"POSIXct"`
 
 ```{r}
 z <- seq(0, 3600 * 10, by = 3600)
+attr(z, which = "class") <- "POSIXct"
+print(z)
 ```
 
 What do you notice about the date-time? If you are unsure, check out

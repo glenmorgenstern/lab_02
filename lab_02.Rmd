@@ -67,13 +67,31 @@ x
 Complete the following without using any loops.
 
 1. Subset only the letters from `x`.
+```{r}
+x[x %in% letters]
+
+```
 
 2. Subset only the negative numbers from `x`.
 
+```{r}
+y <- x[x %in% -15:0]
+y
+```
+
 3. Select the numbers divisible by 3 from `x`.
+
+```{r}
+z <- x[x %in% -15:15]
+z <- as.numeric(z)
+z[(z %% 3 == 0)]
+```
 
 4. Remove all values with an even index from `x`.
 
+```{r}
+x[-seq(2, length(x), 2)]
+```
 
 
 ## Git from the command line
